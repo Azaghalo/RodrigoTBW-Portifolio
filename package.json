@@ -1,7 +1,7 @@
 {
   "homepage": "http://Azaghalo.github.io/RodrigoTBW-Portifolio",
   "name": "react-apps",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
