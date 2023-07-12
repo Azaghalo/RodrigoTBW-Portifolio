@@ -1,0 +1,317 @@
+.project {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.project.inverted {
+  flex-direction: row-reverse;
+}
+
+.showcase {
+  display: flex;
+  min-height: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.ipad,
+.iphone {
+  padding: 0;
+  box-sizing: content-box;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px 5px rgba(27, 27, 27, 0.438);
+}
+
+.iphone {
+  width: 184px;
+  height: 375px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 10px;
+  left: -2vw;
+}
+
+.iphoneFrame {
+  height: 375px;
+  width: 188.89px;
+  box-sizing: content-box;
+  right: -2px;
+  position: absolute;
+}
+
+.iphoneScreen {
+  background-image: url(./Images/MobileBg.png);
+  background-size: cover;
+  height: 355px;
+  top: 10px;
+  left: 7px;
+  width: 1025.34px;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  padding-left: 10px;
+}
+
+.ipad {
+  height: 600px;
+  width: 440.5px;
+  position: relative;
+  border-radius: 25px;
+}
+
+.ipadFrame {
+  height: 600px;
+  width: 447.5px;
+  right: -4px;
+  box-sizing: content-box;
+  position: absolute;
+}
+
+.ipadScreen {
+  background-size: cover;
+  height: 565px;
+  top: 20px;
+  left: 10px;
+  width: 2583px;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  padding-left: 10px;
+}
+
+.projectDescription {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  max-height: 650px;
+  justify-content: space-around;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.projectDescription .glitch {
+  font-size: min(10vw, 3.5rem);
+  position: relative;
+}
+
+.visitBtnContainer {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+  height: 80px;
+}
+
+.visitBtn {
+  cursor: pointer;
+  height: 80px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 100%;
+  color: rgb(188, 252, 243);
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50px 100%, 0 calc(100% - 30px));
+  outline: 0;
+  border: 0;
+  background-color: #52a9d1;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.btnShadow {
+  cursor: pointer;
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  background-color: #3280a5;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50px 100%, 0 calc(100% - 30px));
+  top: 5px;
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.visitBtn:active {
+  top: 5px;
+  box-shadow: inset 0px 0px 10px #3280a5;
+  outline: none;
+}
+
+.visitBtnContainer:active {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.technologies {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 200px;
+}
+
+.technologiesIcons {
+  font-size: 4.5rem;
+}
+
+.descpText p {
+  font: 1.1em sans-serif;
+}
+
+.linkBtn {
+  width: 100%;
+}
+
+.btnsContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.visitBtnAlt {
+  cursor: pointer;
+  height: 80px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 100%;
+  color: rgb(188, 252, 243);
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 50px, calc(100% - 50px) 100%, 0 100%);
+  outline: 0;
+  border: 0;
+  background-color: #965fdd;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.btnShadowAlt {
+  cursor: pointer;
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  background-color: #5e3a8d;
+  clip-path: polygon(0 0, 100% 0, 100% 50px, calc(100% - 50px) 100%, 0 100%);
+  top: 5px;
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.visitBtnAlt:active {
+  top: 5px;
+  box-shadow: inset 0px 0px 10px #7132a5;
+  outline: none;
+}
+
+@media screen and (max-width: 590px) {
+  .showcase {
+    min-height: 550px;
+  }
+
+  .iphone {
+    width: 144.75px;
+    height: 302px;
+    border-radius: 20px;
+  }
+
+  .iphoneFrame {
+    width: 150px;
+    height: 302px;
+  }
+
+  .iphoneScreen {
+    height: 290px;
+    width: 804px;
+    top: 9px;
+    left: 4px;
+  }
+
+  .ipad {
+    height: 483px;
+    width: 332px;
+    border-radius: 20px;
+  }
+
+  .ipadFrame {
+    height: 483px;
+    width: 335px;
+    right: -1px;
+  }
+
+  .ipadScreen {
+    height: 453px;
+    width: 1890px;
+    top: 14px;
+    left: 10px;
+  }
+
+  .technologies {
+    min-height: 120px;
+  }
+
+  .technologiesIcons {
+    font-size: 3rem;
+  }
+
+  .projectDescription {
+    max-height: 850px;
+    padding: 0;
+  }
+
+  .projectDescription .glitch {
+    font-size: min(8vw, 3.5rem);
+    position: relative;
+  }
+
+  .descpText p {
+    font: 1em sans-serif;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .showcase {
+    min-height: 420px;
+  }
+
+  .iphone {
+    width: 112px;
+    height: 230px;
+    border-radius: 20px;
+  }
+
+  .iphoneFrame {
+    width: 114px;
+    height: 230px;
+    left: -1px;
+  }
+
+  .iphoneScreen {
+    width: 619px;
+    height: 218px;
+    top: 6px;
+    left: 5px;
+  }
+
+  .ipad {
+    height: 353px;
+    width: 245px;
+    border-radius: 17px;
+  }
+
+  .ipadFrame {
+    height: 353px;
+    width: 246px;
+    right: -1px;
+  }
+
+  .ipadScreen {
+    height: 333px;
+    width: 1390px;
+    top: 11px;
+    left: 7px;
+  }
+
+  .technologiesIcons {
+    font-size: 2.7rem;
+  }
+
+  .descpText p {
+    font: 0.8em sans-serif;
+  }
+}

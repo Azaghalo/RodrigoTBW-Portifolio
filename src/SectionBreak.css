@@ -1,0 +1,37 @@
+.divisorBar {
+  width: 100%;
+  height: 10px;
+  box-shadow: 0px -7px 6px 0px #48fafd, 0px 5px 10px 5px #ff42c2;
+  z-index: 10;
+  position: relative;
+}
+
+.divisorBar:before {
+  content: "";
+  background: linear-gradient(90deg, #48fafd, #ff42c2);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-divisorBar 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.divisorBar:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
