@@ -23,6 +23,11 @@
   filter: blur(15px);
 }
 
+.linkStyle {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 950px) {
   .portifolioWraper {
     flex-direction: column;

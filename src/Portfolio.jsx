@@ -1,7 +1,7 @@
 import "./Portifolio.css";
 import ShowCase from "./ShowCase";
 import { FaJava } from "react-icons/fa";
-import { SiJavascript, SiReact, SiNodedotjs } from "react-icons/si";
+import { SiJavascript, SiReact, SiNodedotjs, SiAxios, SiTailwindcss } from "react-icons/si";
 import LinkBtn from "./LinkBtn";
 import IconeTech from "./IconeTech";
 import GlitchText from "./GlitchText";
@@ -9,6 +9,8 @@ import TranspMob from "./Images/MobileBg.png";
 import TranspDesk from "./Images/DesktopBg.png";
 import PortMob from "./Images/PortifolioLandingMob.png";
 import PortDesk from "./Images/PortifolioLanding.png";
+import WeatherDesk from "./Images/WeatherAppDesk.png";
+import WeatherMob from "./Images/WheaterAppMob.png";
 
 export default function Portfolio() {
   return (
@@ -50,6 +52,52 @@ export default function Portfolio() {
       </ShowCase>
       <ShowCase
         inverted={true}
+        phonePrints={WeatherMob}
+        tabletPrints={WeatherDesk}
+        IpadScreenSizes={{ max: 415, mid: 315, min: 231.65 }}
+        IphoneScreenSizes={{ max: 170.89, mid: 134, min: 103.15 }}
+        numberOfPrints={1}
+      >
+        <div className="projectDescription">
+          <GlitchText text={"My Weather App"} />
+          <div className="descpText">
+            <h3>Desenvolvimento Front-end</h3>
+            <p>Desenvolvido para estudo e familiarização com as ferramentas.</p>
+            <p>Utiliza React como framework, Tailwind para estilização e Context API para propagar informações dentro do site.</p>
+            <p>
+              100% responsivo inspirado no design{" "}
+              <a target="blank" className="linkStyle" href="https://dribbble.com/shots/15342976-Weather-forecast-Mobile-App-Deisign">
+                "Weather forecast - Mobile App Deisign"
+              </a>{" "}
+              de Outcrowd.
+            </p>
+            <p>Coleta informações da api "weatherapi.com".</p>
+          </div>
+          <div className="technologies">
+            <IconeTech tech={"JavaScript"} stroke={"#70437f"}>
+              <SiJavascript className="technologiesIcons" />
+            </IconeTech>
+            <IconeTech tech={"React"} stroke={"#70437f"}>
+              <SiReact className="technologiesIcons" />
+            </IconeTech>
+            <IconeTech tech={"TailWind"} stroke={"#70437f"}>
+              <SiTailwindcss className="technologiesIcons" />
+            </IconeTech>
+            <IconeTech tech={"Context API"} stroke={"#70437f"}>
+              <SiReact className="technologiesIcons" />
+            </IconeTech>
+            <IconeTech tech={"Axios"} stroke={"#70437f"}>
+              <SiAxios className="technologiesIcons" />
+            </IconeTech>
+          </div>
+          <div className="btnsContainer">
+            <LinkBtn link={"https://azaghalo.github.io/my_weather_app/"} altBtn={false} btnText={"Visite a página"} />
+            <LinkBtn link={"https://github.com/Azaghalo/my_weather_app"} altBtn={true} btnText={"GitHub"} />
+          </div>
+        </div>
+      </ShowCase>
+      <ShowCase
+        inverted={true}
         phonePrints={PortMob}
         tabletPrints={PortDesk}
         IpadScreenSizes={{ max: 834, mid: 630, min: 463.3 }}
@@ -57,15 +105,10 @@ export default function Portfolio() {
         numberOfPrints={2}
       >
         <div className="projectDescription">
-          <GlitchText text={"Portal da Transparência"} />
+          <GlitchText text={"My Weather App"} />
           <div className="descpText">
-            <h3>Desenvolvimento Front-end e Back-end</h3>
-            <p>O Portal da Transparência é uma plataforma online que promove a divulgação clara e acessível de informações governamentais.</p>
-            <p>
-              Nele, é possível encontrar dados sobre orçamentos, receitas, despesas, contratos e licitações do setor público. Com transparência e
-              prestação de contas, o portal fortalece a participação cidadã, incentiva a ética na gestão pública e promove a tomada de decisões
-              informadas.
-            </p>
+            <h3>Desenvolvimento Front-end</h3>
+            <p>Repositório com o código desse portfólio.</p>
           </div>
           <div className="technologies">
             <IconeTech tech={"JavaScript"} stroke={"#70437f"}>
@@ -76,8 +119,7 @@ export default function Portfolio() {
             </IconeTech>
           </div>
           <div className="btnsContainer">
-            <LinkBtn link={"#"} altBtn={false} btnText={"Visite a página"} />
-            <LinkBtn link={"#"} altBtn={true} btnText={"GitHub"} />
+            <LinkBtn link={"https://github.com/Azaghalo/RodrigoTBW-Portifolio"} altBtn={true} btnText={"GitHub"} />
           </div>
         </div>
       </ShowCase>
