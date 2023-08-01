@@ -1,16 +1,16 @@
 import "./Portifolio.css";
-import ShowCase from "./ShowCase";
+import ShowCase from "../components/ShowCase";
 import { FaJava } from "react-icons/fa";
 import { SiJavascript, SiReact, SiNodedotjs, SiAxios, SiTailwindcss } from "react-icons/si";
-import LinkBtn from "./LinkBtn";
-import IconeTech from "./IconeTech";
-import GlitchText from "./GlitchText";
-import TranspMob from "./Images/MobileBg.png";
-import TranspDesk from "./Images/DesktopBg.png";
-import PortMob from "./Images/PortifolioLandingMob.png";
-import PortDesk from "./Images/PortifolioLanding.png";
-import WeatherDesk from "./Images/WeatherAppDesk.png";
-import WeatherMob from "./Images/WheaterAppMob.png";
+import LinkBtn from "../components/LinkBtn";
+import IconeTech from "../components/IconeTech";
+import GlitchText from "../components/GlitchText";
+import TranspMob from "../Images/MobileBg.png";
+import TranspDesk from "../Images/DesktopBg.png";
+import PortMob from "../Images/PortifolioLandingMob.png";
+import PortDesk from "../Images/PortifolioLanding.png";
+import WeatherDesk from "../Images/WeatherAppDesk.png";
+import WeatherMob from "../Images/WheaterAppMob.png";
 
 export default function Portfolio() {
   return (
@@ -47,7 +47,9 @@ export default function Portfolio() {
               <FaJava className="technologiesIcons" />
             </IconeTech>
           </div>
-          <LinkBtn link={"https://grpdsv.thema.inf.br/transparencia/prefeitura/#/"} altBtn={false} btnText={"Visite a página"} />
+          <div className="btnsContainer">
+            <LinkBtn link={"https://grpdsv.thema.inf.br/transparencia/prefeitura/#/"} altBtn={false} btnText={"Visite a página"} />
+          </div>
         </div>
       </ShowCase>
       <ShowCase
@@ -69,7 +71,7 @@ export default function Portfolio() {
               <a target="blank" className="linkStyle" href="https://dribbble.com/shots/15342976-Weather-forecast-Mobile-App-Deisign">
                 "Weather forecast - Mobile App Deisign"
               </a>{" "}
-              de Outcrowd.
+              de Outcrowd. Conta com animações dinâmicas de neve e chuva, dependendo das condições climáticas da cidade selecionada.
             </p>
             <p>Coleta informações da api "weatherapi.com".</p>
           </div>
@@ -83,9 +85,6 @@ export default function Portfolio() {
             <IconeTech tech={"TailWind"} stroke={"#70437f"}>
               <SiTailwindcss className="technologiesIcons" />
             </IconeTech>
-            <IconeTech tech={"Context API"} stroke={"#70437f"}>
-              <SiReact className="technologiesIcons" />
-            </IconeTech>
             <IconeTech tech={"Axios"} stroke={"#70437f"}>
               <SiAxios className="technologiesIcons" />
             </IconeTech>
@@ -97,7 +96,6 @@ export default function Portfolio() {
         </div>
       </ShowCase>
       <ShowCase
-        inverted={true}
         phonePrints={PortMob}
         tabletPrints={PortDesk}
         IpadScreenSizes={{ max: 834, mid: 630, min: 463.3 }}
@@ -105,10 +103,11 @@ export default function Portfolio() {
         numberOfPrints={2}
       >
         <div className="projectDescription">
-          <GlitchText text={"My Weather App"} />
+          <GlitchText text={"Meu Portfólio"} />
           <div className="descpText">
             <h3>Desenvolvimento Front-end</h3>
             <p>Repositório com o código desse portfólio.</p>
+            <p>Desenvolvido usando React (Vite) Context API e css puro</p>
           </div>
           <div className="technologies">
             <IconeTech tech={"JavaScript"} stroke={"#70437f"}>

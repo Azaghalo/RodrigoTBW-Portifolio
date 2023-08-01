@@ -1,26 +1,15 @@
 .portifolioWraper {
   margin: 0 auto;
   background: linear-gradient(200deg, #4d1a4d 0%, #65bfc9 80%);
-  width: 90%;
+  width: 100%;
   z-index: 0;
   position: relative;
   min-height: 100vh;
-  padding: 80px 50px;
+  padding: 90px 10rem;
   display: flex;
   flex-direction: column;
   gap: 100px;
   justify-content: space-around;
-}
-
-.portifolioWraper::before {
-  content: "";
-  height: 100%;
-  position: absolute;
-  inset: -5px;
-  transform: translate(0px, 0px);
-  z-index: -1;
-  background: linear-gradient(200deg, #4d1a4d 0%, #65bfc9 80%);
-  filter: blur(15px);
 }
 
 .linkStyle {
@@ -34,10 +23,15 @@
   }
 }
 
+@media only screen and (max-width: 790px) {
+  .portifolioWraper {
+    padding: 65px 10px;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .portifolioWraper {
-    width: 100%;
-    padding: 40px 10px;
+    padding: 65px 10px;
     margin: 0;
   }
 }

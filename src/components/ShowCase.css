@@ -16,6 +16,9 @@
   margin: 0 auto;
   position: relative;
 }
+.showcase {
+  margin-left: 25px;
+}
 
 .ipad,
 .iphone {
@@ -81,10 +84,10 @@
 }
 
 .projectDescription {
-  width: 50%;
+  width: 20%;
+  min-width: 355px;
   display: flex;
   flex-direction: column;
-  max-height: 650px;
   justify-content: space-around;
   flex-grow: 1;
   padding: 20px;
@@ -162,7 +165,7 @@
 
 .btnsContainer {
   display: flex;
-  gap: 20px;
+  margin-inline: -20px;
 }
 
 .visitBtnAlt {
@@ -199,9 +202,20 @@
   outline: none;
 }
 
+@media only screen and (max-width: 790px) {
+  .showcase {
+    margin: auto;
+  }
+}
+
 @media screen and (max-width: 590px) {
   .showcase {
     min-height: 550px;
+  }
+
+  .btnsContainer {
+    display: flex;
+    margin-inline: 0;
   }
 
   .iphone {

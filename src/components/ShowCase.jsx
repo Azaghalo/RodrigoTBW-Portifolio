@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import "./ShowCase.css";
-import Iphone from "./Images/iphoneBack.png";
-import Ipad from "./Images/ipadBack.png";
+import Iphone from "../Images/iphoneBack.png";
+import Ipad from "../Images/ipadBack.png";
 
 export default function ShowCase(props) {
   const [curIndex, setCurIndex] = useState(0);

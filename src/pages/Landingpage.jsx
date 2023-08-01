@@ -2,13 +2,11 @@ import { useCallback, useEffect, useState } from "react";
 import "./LandingSpot.css";
 import "./Style.css";
 import { BsGithub, BsLinkedin, BsFillFileEarmarkTextFill } from "react-icons/bs";
-import ArrowIcon from "./ArrowIcon";
-import GlitchText from "./GlitchText";
-import IconeTech from "./IconeTech";
+import { GlitchText, IconeTech } from "../components";
 
 const skills = ["React", "Front-End", "JavaScript", "Back-End", "Node.js"];
 
-export default function LandingSpot() {
+export default function LandingPage() {
   const [newSkill, setSkill] = useState("React");
 
   const changeSkill = useCallback(() => {

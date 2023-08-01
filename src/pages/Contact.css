@@ -1,0 +1,98 @@
+.contact-wrapper {
+  margin: 0 auto;
+  background: linear-gradient(200deg, #4d1a4d 0%, #65bfc9 80%);
+  width: 100%;
+  z-index: 0;
+  position: relative;
+  min-height: 100vh;
+  padding: 90px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font: 1.1em sans-serif;
+}
+
+.contact-wrapper .glitch {
+  font-size: min(10vw, 3.5rem);
+  position: relative;
+}
+
+.prompt-wrapper {
+  width: 50%;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  background-color: #ddd2af;
+  padding: 10px 20px;
+  width: 50%;
+  min-width: 300px;
+}
+
+.email-form-components {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-form-components label {
+  color: #9b229b;
+  font-weight: bold;
+}
+
+.email-form-components input,
+.email-form-components textarea {
+  padding: 5px 10px;
+  background-color: #80dae4;
+  border: 1px solid black;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  outline: none;
+  resize: none;
+}
+
+.email-form-components textarea {
+  height: 150px;
+}
+
+.email-form-components.message-text {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 950px) {
+  .contact-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .prompt-wrapper {
+    width: 100%;
+  }
+
+  .email-form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .portifolioWraper {
+    padding: 65px 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .portifolioWraper {
+    padding: 65px 10px;
+    margin: 0;
+  }
+}
