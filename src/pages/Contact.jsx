@@ -37,15 +37,15 @@ export default function Contact() {
       <form className="email-form" ref={form} onSubmit={sendEmail}>
         <div className="email-form-components">
           <label htmlFor="name">Name:</label>
-          <input id="name" type="text" name="user_name" />
+          <input required id="name" type="text" name="user_name" />
         </div>
         <div className="email-form-components">
           <label htmlFor="email">Email:</label>
-          <input id="email" type="email" name="user_email" />
+          <input required id="email" type="email" name="user_email" />
         </div>
         <div className="email-form-components message-text">
           <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" />
+          <textarea required id="message" name="message" />
         </div>
         <LinkBtn btnText={"Enviar"} />
       </form>
